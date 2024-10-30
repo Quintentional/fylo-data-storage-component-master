@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>Frontend Mentor | Fylo data storage component</title>
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="layout">
+      <div class="main">
+        <img id="logo" src="./images/logo.svg" alt="" />
+      <div class="icons">
+        <img class="icon" src="./images/icon-document.svg" alt="" />
+        <img class="icon" src="./images/icon-folder.svg" alt="" />
+        <img class="icon" src="./images/icon-upload.svg" alt="" />
+      </div>
+      </div>
+      <div class="storage">
+        <p class="usage">You’ve used <span>815 GB</span> of your storage</p>
 
-</head>
-<body>
-
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-</body>
+        <div class="message">
+          <p>185</p><p>GB Left</p>
+          <div class="triangle"></div>
+        </div>
+        <div class="meter">
+          <div class="gradient">
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="range">
+          <p class="start">0 GB</p>
+          <p class="end">1000 GB</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
